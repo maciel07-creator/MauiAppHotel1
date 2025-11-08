@@ -62,7 +62,8 @@
                                TextColor="{StaticResource Primary}"/>
 
                         <Picker x:Name="pck_quarto"
-                                Title="Selecione sua Acomodação" />
+                                Title="Selecione sua Acomodação"
+                                ItemDisplayBinding="{Binding Descricao}"/>
                     </VerticalStackLayout>
                 </Frame>
 
@@ -72,29 +73,25 @@
 
                         <Label Text="Período da Estadia"
                                TextTransform="Uppercase"
-                               FontFamily="LobsterTwoBold"
                                FontSize="Subtitle"
                                TextColor="{StaticResource Primary}"/>
 
                         <HorizontalStackLayout HorizontalOptions="Center">
-                            <Label Text="Check-in:" 
-                                                  FontFamily="SatisfyRegular"
-/>
+                            <Label Text="Check-in:" />
                             <DatePicker x:Name="dtpck_checkin"
+                                        DateSelected="dtpck_checkin_DateSelected"
                                         Format="dd/MM/yyyy" />
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout HorizontalOptions="Center">
-                            <Label Text="Check-out:" 
-                                                  FontFamily="SatisfyRegular"
-/>
+                            <Label Text="Check-out:" />
                             <DatePicker x:Name="dtpck_checkout"
                                         Format="dd/MM/yyyy" />
-                        </HorizontalStackLayout>
+                        </HorizontalStackLayout>                    
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avançar"  />
+                <Button Text="Avançar" Clicked="Button_Clicked" />
 
             </VerticalStackLayout>
         </Frame>
