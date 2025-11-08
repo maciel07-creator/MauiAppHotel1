@@ -74,6 +74,7 @@
                         <Label Text="Período da Estadia"
                                TextTransform="Uppercase"
                                FontSize="Subtitle"
+                               FontFamily="LobsterTwoRegular"
                                TextColor="{StaticResource Primary}"/>
 
                         <HorizontalStackLayout HorizontalOptions="Center">
