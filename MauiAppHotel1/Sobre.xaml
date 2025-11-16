@@ -5,16 +5,16 @@
              Title="Sobre">
     <VerticalStackLayout Padding="20" Spacing="15">
         <Label Text="Aplicativo de Gestão de Hotel"
-               FontAttributes="Bold"
-               FontSize="20"
-               HorizontalOptions="Center" />
+           FontAttributes="Bold"
+           FontSize="20"
+           HorizontalOptions="Center" />
 
         <Label Text="Desenvolvido por: Matheus Maciel"
-               FontSize="16"
-               HorizontalOptions="Center" />
+           FontSize="16"
+           HorizontalOptions="Center" />
 
         <Label Text="Ano de desenvolvimento: 2025"
-               FontSize="16"
-               HorizontalOptions="Center" />
+           FontSize="16"
+           HorizontalOptions="Center" />
     </VerticalStackLayout>
 </ContentPage>
